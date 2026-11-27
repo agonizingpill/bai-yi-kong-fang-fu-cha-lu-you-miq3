@@ -1,5 +1,6 @@
 from domain.vacant_rooms_model import vacant_rooms
 from domain.visit_windows_model import visit_windows
+from domain.fit_requests_model import fit_requests
 from domain.return_forecasts_model import return_forecasts
 from domain.key_handoffs_model import key_handoffs
 
@@ -195,6 +196,253 @@ FIXTURES = [
   'status': '已观测',
   'photo_receipt': 'PHOTO-22-01',
   'desk_note': '实见为 0，保留访问回执'}]),
+    (fit_requests, [
+{
+    'fit_id': 'FIT-17-QA',
+    'room_code': 'ROOM-17',
+    'target_day': '2090-04-05',
+    'status': '排队中',
+    'snapshot': {
+      'observations': [
+        {
+          'code': 'V-17-00',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-02',
+          'activity_count': 4,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-00',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-01',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-06',
+          'activity_count': 2,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-01',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-02',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-10',
+          'activity_count': 0,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-02',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-03',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-14',
+          'activity_count': 3,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-03',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-05',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-18',
+          'activity_count': 5,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-05',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-06',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-22',
+          'activity_count': 6,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-06',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-07',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-26',
+          'activity_count': 0,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-07',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-08',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-26',
+          'activity_count': 1,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-08',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-09',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-01-30',
+          'activity_count': 3,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-09',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-10',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-03',
+          'activity_count': 4,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-10',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-11',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-07',
+          'activity_count': 1,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-11',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-12',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-07',
+          'activity_count': 0,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-12',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-14',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-15',
+          'activity_count': 3,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-14',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-15',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-19',
+          'activity_count': 2,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-15',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-16',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-19',
+          'activity_count': 5,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-16',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-17',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-23',
+          'activity_count': 6,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-17',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-18',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-02-27',
+          'activity_count': 8,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-18',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-19',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-03-03',
+          'activity_count': 9,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-19',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-20',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-03-03',
+          'activity_count': 7,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-20',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-21',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-03-07',
+          'activity_count': 9,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-21',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-22',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-03-11',
+          'activity_count': 8,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-22',
+          'desk_note': '历史实见记录'
+        },
+        {
+          'code': 'V-17-23',
+          'room_code': 'ROOM-17',
+          'visit_day': '2090-03-15',
+          'activity_count': 10,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-17-23',
+          'desk_note': '历史实见记录'
+        }
+      ],
+      'skipped_refusals': 2
+    },
+    'skipped_refusals': 2,
+    'submitted_by': 'operator@demo.test',
+    'token': None,
+    'detail': None,
+    'result': None
+  },
+{
+    'fit_id': 'FIT-22-REF',
+    'room_code': 'ROOM-22',
+    'target_day': '2090-04-09',
+    'status': '已计算',
+    'snapshot': {
+      'observations': [
+        {
+          'code': 'V-22-REF',
+          'room_code': 'ROOM-22',
+          'visit_day': '2090-04-02',
+          'activity_count': 0,
+          'status': '已观测',
+          'photo_receipt': 'PHOTO-22-01',
+          'desk_note': '实见为 0，保留访问回执'
+        }
+      ],
+      'skipped_refusals': 0
+    },
+    'skipped_refusals': 0,
+    'submitted_by': 'reviewer@demo.test',
+    'token': 'archived-1094',
+    'detail': None,
+    'result': {
+      'prediction': 1.7,
+      'gap_days': 7,
+      'lag_count': 0,
+      'holdout_mae': 0.93,
+      'skipped_refusals': 0
+    }
+  }
+    ]),
     (return_forecasts, [{'code': 'FC-REF',
   'room_code': 'ROOM-22',
   'target_day': '2090-04-09',
@@ -203,7 +451,8 @@ FIXTURES = [
   'gap_days': 7,
   'holdout_mae': 0.93,
   'skipped_refusals': 0,
-  'token': 'archived-1094'}]),
+  'token': 'archived-1094',
+  'fit_id': 'FIT-22-REF'}]),
     (key_handoffs, [{'code': 'KEYPLAN-REF',
   'room_code': 'ROOM-22',
   'forecast': 'FC-REF',

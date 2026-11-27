@@ -5,6 +5,7 @@ from core.db import metadata
 
 return_forecasts = Table('return_forecasts', metadata,
     Column('code', String(64), primary_key=True),
+    Column('fit_id', String(64), ForeignKey('fit_requests.fit_id'), nullable=True, unique=True),
     Column('room_code', String(160), ForeignKey('vacant_rooms.code'), nullable=False),
     Column('target_day', String(160), nullable=False),
     Column('prediction', Float, nullable=False),

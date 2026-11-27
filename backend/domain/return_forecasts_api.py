@@ -5,6 +5,7 @@ from core.audit import record
 from core.db import transaction
 from core.records import scan
 from domain import return_forecasts_service as service
+from domain.fit_requests_model import fit_requests
 from domain.return_forecasts_model import return_forecasts
 from domain.return_forecasts_schemas import FitReturn, SignReturn
 
@@ -14,6 +15,18 @@ router = APIRouter()
 def list_return_forecasts(user=Depends(actor)):
     with transaction() as conn:
         return scan(conn, return_forecasts)
+
+
+@router.get('/fit_requests')
+def list_fit_requests(user=Depends(actor)):
+    with transaction() as conn:
+        return service.list_fits(conn)
+
+
+@router.get('/fit_requests/{fit_id}')
+def get_fit_request(fit_id: str, user=Depends(actor)):
+    with transaction() as conn:
+        return service.get_fit(conn, fit_id)
 
 
 @router.post('/return_forecasts/fit-return')
